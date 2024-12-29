@@ -15,6 +15,7 @@
   
 ## Estilado
 - Sencillo, centrado y eficaz
+- Dos errores de sintaxis css (Ver informe enlace arriba)
 - Hay un espacio entre 70 y px que sobra línea 34 font-size: 70 px;
 
 ### NOTA
