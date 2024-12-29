@@ -5,6 +5,7 @@
 [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fangelitabarreir0.github.io%2Fwebapp%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## Marcación
+- Los enlaces a las imágenes principales están rotos
 - Estructura no semántica con párrafos en el mismo body
 - Cuidado, un nombre de archivo con espacio rompe el source línea 28
 
