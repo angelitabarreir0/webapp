@@ -1,0 +1,96 @@
+/* Estilo general del body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5; /* Color de fondo suave */
+    color: #333; /* Texto oscuro */
+    text-align: center; /* Centra el texto en todo el body */
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Azul oscuro */
+}
+
+/* Encabezados secundarios */
+h2 {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    color: #34495e; /* Gris azulado */
+}
+
+/* Encabezados terciarios */
+h3 {
+    font-size: 1.5em;
+    margin: 15px 0 5px;
+    color: #7f8c8d; /* Gris suave */
+}
+
+h4 {
+    font-size: 70 px;
+    margin: 15px 0 5px;
+    color: #7f8c8d; /* Gris suave */
+}
+
+
+
+/* Estilo de párrafo */
+p {
+    margin: 10px 0;
+    color: #555; /* Gris oscuro */
+}
+
+/* Estilo de enlaces */
+a {
+    color: #2980b9; /* Azul suave */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave */
+}
+
+a:hover {
+    color: #3498db; /* Azul más claro al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Estilo para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border: 2px solid #bdc3c7; /* Borde gris suave alrededor de las imágenes */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
+/* Línea horizontal */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Estilo del pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777; /* Gris claro */
+    text-align: center;
+}
+
+/* Estilo adicional para secciones */
+section {
+    background-color: #ffffff; /* Fondo blanco para secciones */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+/* Centrando imágenes */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
