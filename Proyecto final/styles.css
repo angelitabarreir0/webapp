@@ -17,13 +17,13 @@ html{
     box-sizing: border-box;
 }
 
-/utilidades/ 
+/*utilidades*/ 
 .container{
-    max-width: 120rem;
+    max-width: 200rem;
     margin: 0 auto;
 }
 
-/header/
+/*header*/
 .container-hero {
     background-color: var(--background-color);
 }
@@ -99,7 +99,7 @@ html{
     flex-direction: column;
 }
 
-/navbar/
+/*navbar*/
 
 .container-navegador{
     background-color: var(--primary-color);
@@ -109,7 +109,7 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: rgb(1, 246, 1);
+    background-color: rgb(71, 104, 71);
     
 }
 .navegador .fa-bars{
@@ -155,5 +155,79 @@ html{
     color: #fff;
 }
 
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 4.4rem;
+    overflow: hidden;
+}
+.search-form input{
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #98abf6;
+    cursor: pointer;
+}
+.search-form input::-webkit-search-cancel-button{
+    appearance: none;
+}
+.search-form .btn-search{
+    border: none;
+    background-color: #d79494
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+.btn-search i{
+    font-size: 2rem;
+    color: #fff;
+}
 
+/*BANNER*/
+
+.banner{
+    background-image: url("fotos/bañera.png");
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+.content-banner{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 15rem 0;
+}
+.content-banner p{
+    color: rgb(0, 245, 167);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.content-banner h2{
+    color: #2c2c2c;
+    font-size: 10rem;
+    font-weight: 500;
+    line-height: 0.7
+}
+
+.content-banner a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(126, 114, 100);
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+
+}
 </style>
