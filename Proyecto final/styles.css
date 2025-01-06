@@ -229,4 +229,132 @@ html{
     text-transform: uppercase;
     border-radius: 3rem;
 }
+
+/* MAIN CONTENT*/
+.main-content{
+    background-color: aquamarine;
+}
+
+/*FEATURES*/
+.container-features{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.card-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+}
+
+.card-feature i{
+    font-size: 2.7rem;
+    color:rgb(94, 124, 114)
+}
+
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.feature-content span{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #151515;
+}
+
+.feature-content p{
+    color: #2c2c2c;
+    font-weight: 500;
+
+}
+
+/*CATEGORIES*/
+
+.top-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-categories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.card-category{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+
+}
+
+.category-bañeras{
+    background-image: linear-gradient(#00000080, #00000080), url(fotos/bañera\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.category-somier{
+    background-image: linear-gradient(#00000080, #00000080), url(fotos/somier.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category-ladrillos{
+    background-image: linear-gradient(#00000080, #00000080), url(fotos/ladrillos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.card-category p{
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-category p::after{
+    content: "";
+    width: 2.5rem;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.card-category span{
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.card-category span:hover{
+    color: #d79494;
+}
+
+
 </style>
