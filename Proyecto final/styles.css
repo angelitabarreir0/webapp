@@ -23,6 +23,12 @@ html{
     margin: 0 auto;
 }
 
+.heading-1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 6rem;
+}
+
 /*header*/
 .container-hero {
     background-color: var(--background-color);
@@ -134,7 +140,7 @@ html{
     position: relative;
 }
 
-.menu a: ::after{
+.menu a::after{
     content: "";
     width: 1.5rem;
     height: 1px;
@@ -180,7 +186,7 @@ html{
 }
 .search-form .btn-search{
     border: none;
-    background-color: #d79494
+    background-color: #d79494;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,5 +362,120 @@ html{
     color: #d79494;
 }
 
+/* TOP PRODUCTS*/
+
+.top-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-options{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-options span{
+    color: #98abf6;
+    background-color: aliceblue;
+    padding: 0.7rem 3rem;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.container-options span:hover{
+    background-color: #98abf6;
+    color: #092fc5;
+}
+.container-options span.active{
+    background-color: #98abf6;
+    color: #092fc5;
+}
+
+/*PRODUCTS*/
+
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 3rem;
+}
+
+.card-product{
+    background-color: #93f2e2;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+
+}
+
+.card-product{
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+box-shadow: 0 0 9px rgba(0, 0, 0, .1);
+}
+
+.container-fotos{
+    position: relative;
+}
+
+.container-fotos img{
+    width: 100%;
+}
+
+.content-card-product{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, .main-content);
+    row-gap: 1rem;
+}
+
+.stars i{
+    font-size: 3rem;
+    color:red
+}
+
+.content-card-product h3{
+    grid-row: 2/3;
+    grid-column: 1,-1;
+    font-weight: 400;
+    font-size:1.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.content-card-product h3:hover{
+    color: #93f2e2;
+}
+
+.add-cart{
+    border: 2px solid rgb(183, 128, 128);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.add-cart :hover{
+    background-color: blue
+}
+
+.add-cart i{
+    font-size: 1.5rem;
+    color: rgb(129, 93, 46);
+}
+
+.add-cart: ho
 
 </style>
