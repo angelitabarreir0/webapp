@@ -17,7 +17,7 @@ html{
     box-sizing: border-box;
 }
 
-/*utilidades*/ 
+/*utilidades----------------------------------------------------------------------------------------------------------------------*/ 
 .container{
     max-width: 200rem;
     margin: 0 auto;
@@ -29,7 +29,7 @@ html{
     font-size: 6rem;
 }
 
-/*header*/
+/*header---------------------------------------------------------------------------------------------------------------------------*/
 .container-hero {
     background-color: var(--background-color);
 }
@@ -105,7 +105,7 @@ html{
     flex-direction: column;
 }
 
-/*navbar*/
+/*navbar---------------------------------------------------------------------------------------------------------------------------*/
 
 .container-navegador{
     background-color: var(--primary-color);
@@ -198,7 +198,7 @@ html{
     color: #fff;
 }
 
-/*BANNER*/
+/*BANNER---------------------------------------------------------------------------------------------------------------------------*/
 
 .banner{
     background-image: url("fotos/bañera.png");
@@ -236,12 +236,12 @@ html{
     border-radius: 3rem;
 }
 
-/* MAIN CONTENT*/
+/* MAIN CONTENT-------------------------------------------------------------------------------------------------------------------*/
 .main-content{
     background-color: aquamarine;
 }
 
-/*FEATURES*/
+/*FEATURES------------------------------------------------------------------------------------------------------------------------*/
 .container-features{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -284,7 +284,7 @@ html{
 
 }
 
-/*CATEGORIES*/
+/*CATEGORIES------------------------------------------------------------------------------------------------------------------------*/
 
 .top-categories{
     display: flex;
@@ -362,7 +362,7 @@ html{
     color: #d79494;
 }
 
-/* TOP PRODUCTS*/
+/* TOP PRODUCTS----------------------------------------------------------------------------------------------------------------------*/
 
 .top-products{
     display: flex;
@@ -397,7 +397,7 @@ html{
     color: #092fc5;
 }
 
-/*PRODUCTS*/
+/*PRODUCTS--------------------------------------------------------------------------------------------------------------------------*/
 
 .container-products{
     display: grid;
@@ -476,6 +476,39 @@ box-shadow: 0 0 9px rgba(0, 0, 0, .1);
     color: rgb(129, 93, 46);
 }
 
-.add-cart: ho
+.add-cart:hover i{
+    color: #fff;
+}
+
+.content-card-product .price{
+    justify-self: end;
+    align-self: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #2c2c2c;
+    margin-left: .5rem;
+}
+
+/*GALERÍA 3D--------------------------------------------------------------------------------------------------------------------*/
+
+/*ESPECIALES--------------------------------------------------------------------------------------------------------------------*/
+
+.specials{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/*BLOGS-------------------------------------------------------------------------------------------------------------------------*/
+
+}
+
 
 </style>
