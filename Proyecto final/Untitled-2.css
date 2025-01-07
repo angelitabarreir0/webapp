@@ -6,8 +6,8 @@
 }
 
 body{
-    background: linear-gradient(to right, blue, black);
-    height: 100vh;
+    background: black
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +16,8 @@ body{
 
 .carrusel{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 0px;
+    height: 0px;
     transform-style: preserve-3d;
-    animation: rotate 30s;
+    animation: rotate 5s;
 }
