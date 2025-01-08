@@ -199,6 +199,37 @@ html{
     color: #fff;
 }
 
+/* parpadeo para search-form------------------------------------------------------------------------------------------------------- */
+.blink {
+	animation: blinkEffect 0.2s alternate infinite;
+  }
+  
+  @keyframes blinkEffect {
+	0% {
+	  color: yellow;
+	}
+	100% {
+	  color: red;
+	}
+  }
+
+
+  
+  /*PARPADEO------------------------------------------------------------------------------------------------------------------------ */
+  .blink {
+	animation: blinkEffect 0.2s alternate infinite;
+  }
+  
+  @keyframes blinkEffect {
+	0% {
+	  color: yellow;
+	}
+	100% {
+	  color: red;
+	}
+  }
+  
+
 /*BANNER---------------------------------------------------------------------------------------------------------------------------*/
 
 .banner{
