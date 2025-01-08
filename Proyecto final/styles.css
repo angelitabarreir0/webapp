@@ -64,7 +64,7 @@ html{
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding-left: 70px;
+    padding-left: 40px;
 }
 
 .customer-support i {
@@ -165,19 +165,23 @@ html{
 .container-user .fa-user{
     font-size: 3rem;
     color: var(--primary-color);
-    padding-right: 2.5rem;
-    border-right: 1px solid #d79494;
+    padding-right: 3rem;
+    border-right: 3px solid #d79494;
 }
 
 .container-user .fa-basket-shopping{
     font-size: 3rem;
     color: var(--primary-color);
-    padding-left: 1rem;
+    padding-right: 4rem;
 }
 
 .content-shopping-cart{
     display: flex;
     flex-direction: column;
+}
+
+.content-carrito-compra{
+	padding-right: 4rem;
 }
 .marquee-container {
     width: 100%;

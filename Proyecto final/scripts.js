@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const customerSupportIcon = document.querySelector(".customer-support i");
 
     customerSupportIcon.addEventListener("click", () => {
-        alert("Lo sentimos, no tenemos ningún support ni ningún customer.");
+        alert("Lo sentimos, no tenemos ningún support ni ningún customer, bueno, no lo sentimos.");
         customerSupportIcon.style.color = 'red'; // Cambia el color del icono al hacer clic
     });
 
