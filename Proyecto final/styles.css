@@ -1,4 +1,4 @@
-<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --primary-color: #98abf6;
@@ -140,7 +140,7 @@ html{
     position: relative;
 }
 
-.menu a::after{
+.menu a::after {
     content: "";
     width: 1.5rem;
     height: 1px;
@@ -148,10 +148,11 @@ html{
     position: absolute;
     bottom: -3px;
     left: 50%;
-    transform: translate (-50%,50%);
+    transform: translate(-50%, 50%); 
     opacity: 0;
-    transition: all .3s ease
+    transition: all .3s ease;
 }
+
 
 .menu a:hover::after{
     opacity: 1;
@@ -433,12 +434,13 @@ box-shadow: 0 0 9px rgba(0, 0, 0, .1);
     width: 100%;
 }
 
-.content-card-product{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, .main-content);
-    row-gap: 1rem;
+.content-card-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(4, auto);
+    row-gap: 1rem; 
 }
+
 
 .stars i{
     font-size: 3rem;
@@ -979,4 +981,6 @@ box-shadow: 0 0 9px rgba(0, 0, 0, .1);
 	.content p{
 		font-size: 1.6rem;
 	}
+
+      
 }
