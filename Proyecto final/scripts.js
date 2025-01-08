@@ -32,3 +32,55 @@ navLinks.forEach(link => {
   link.addEventListener("mouseout", removeBlinkEffect);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const categories = document.querySelectorAll(".card-category");
+
+    categories.forEach(category => {
+        setInterval(() => {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            category.style.backgroundColor = randomColor;
+        }, 500); // Cambia de color cada 500 milisegundos
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const blogs = document.querySelectorAll(".card-blog");
+
+    blogs.forEach(blog => {
+        blog.addEventListener("mouseover", () => {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            blog.style.backgroundColor = randomColor;
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const features = document.querySelectorAll(".card-feature");
+
+    features.forEach(feature => {
+        feature.addEventListener("mouseover", () => {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            feature.style.backgroundColor = randomColor;
+        });
+
+        feature.addEventListener("mouseout", () => {
+            feature.style.backgroundColor = '#fff';
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const basketIcon = document.querySelector(".container-user .fa-basket-shopping");
+
+    basketIcon.addEventListener("mouseover", () => {
+        basketIcon.classList.add("multiplied-icons");
+    });
+
+    basketIcon.addEventListener("mouseout", () => {
+        basketIcon.classList.remove("multiplied-icons");
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const customerSupportIcon = document.querySelector(".customer-support i");
+
+    customerSupportIcon.addEventListener("mouseover", () => {
+        alert("Lo sentimos, no tenemos ningún customer ni ningún support.");
+    });
+});

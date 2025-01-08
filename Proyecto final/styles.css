@@ -62,6 +62,21 @@ html{
     display: flex;
     flex-direction: column;
 }
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 70px;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+}
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+}
 
 .container-logo{
     display: flex;
@@ -79,6 +94,59 @@ html{
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: -1px;
+}
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.container-logo i {
+    font-size: 3rem;
+    transition: transform 0.5s ease;
+}
+
+.container-logo h1 {
+    margin: 0;
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: #151515;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    display: inline-block;
+    transition: transform 0.5s ease;
+    white-space: nowrap;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.container-logo:hover i {
+    animation: rotate 0.5s infinite; /* Rotación del icono */
+}
+
+.container-logo:hover h1 a {
+    animation: shake 0.5s infinite; /* Temblor del texto */
 }
 
 .container-user{
@@ -104,6 +172,30 @@ html{
     display: flex;
     flex-direction: column;
 }
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffd700; 
+    padding: 1rem 0;
+    position: relative;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-size: 2rem; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 /*navbar---------------------------------------------------------------------------------------------------------------------------*/
 
@@ -162,7 +254,7 @@ html{
     color: #fff;
 }
 
-.search-form{
+.search-form {
     position: relative;
     display: flex;
     align-items: center;
@@ -171,8 +263,22 @@ html{
     background-color: #fff;
     height: 4.4rem;
     overflow: hidden;
+    transition: background-color 0.3s ease;
 }
-.search-form input{
+
+.search-form:hover {
+    animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
+    0% { background-color: #ffd700; }
+    25% { background-color: #ff6347; }
+    50% { background-color: #98abf6; }
+    75% { background-color: #f0e68c; }
+    100% { background-color: #d79494; }
+}
+
+.search-form input {
     outline: none;
     font-family: 'Courier New', Courier, monospace;
     border: none;
@@ -181,11 +287,18 @@ html{
     padding: 0 2rem;
     color: #98abf6;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.search-form input::-webkit-search-cancel-button{
+
+.search-form input:hover {
+    animation: changeColor 1s infinite;
+}
+
+.search-form input::-webkit-search-cancel-button {
     appearance: none;
 }
-.search-form .btn-search{
+
+.search-form .btn-search {
     border: none;
     background-color: #d79494;
     display: flex;
@@ -193,11 +306,24 @@ html{
     justify-content: center;
     height: 100%;
     padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.btn-search i{
+
+.search-form .btn-search:hover {
+    animation: changeColor 1s infinite;
+}
+
+.btn-search i {
     font-size: 2rem;
     color: #fff;
+    transition: color 0.3s ease;
 }
+
+.btn-search:hover i {
+    color: #000; /* Cambia el color del icono cuando pasa el ratón */
+}
+
 
 /* parpadeo para search-form------------------------------------------------------------------------------------------------------- */
 .blink {
@@ -215,7 +341,7 @@ html{
 
 
   
-  /*PARPADEO------------------------------------------------------------------------------------------------------------------------ */
+/*PARPADEO------------------------------------------------------------------------------------------------------------------------ */
   .blink {
 	animation: blinkEffect 0.2s alternate infinite;
   }
@@ -318,6 +444,63 @@ html{
 
 }
 
+.container-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.card-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-feature:hover {
+    transform: translateY(-10px); /* Salto */
+    background-color: #f0e68c; /* Cambio de color de fondo */
+}
+
+.card-feature i {
+    font-size: 2.7rem;
+    color: rgb(94, 124, 114);
+    transition: transform 0.3s ease;
+}
+
+.card-feature:hover i {
+    transform: rotate(20deg); /* Rotación del ícono */
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-content span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #151515;
+    transition: color 0.3s ease;
+}
+
+.feature-content p {
+    color: #2c2c2c;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card-feature:hover .feature-content span,
+.card-feature:hover .feature-content p {
+    color: #ff6347; /* Cambio de color del texto */
+}
 
 
 /*CATEGORIES------------------------------------------------------------------------------------------------------------------------*/
@@ -396,6 +579,15 @@ html{
 
 .card-category span:hover{
     color: #d79494;
+}
+
+.card-category {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-category:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
 }
 
 /* TOP PRODUCTS----------------------------------------------------------------------------------------------------------------------*/
@@ -532,7 +724,6 @@ box-shadow: 0 0 9px rgba(0, 0, 0, .1);
     margin-left: .5rem;
 }
 
-/*GALERÍA 3D--------------------------------------------------------------------------------------------------------------------*/
 
 /*ESPECIALES--------------------------------------------------------------------------------------------------------------------*/
 
@@ -813,6 +1004,8 @@ box-shadow: 0 0 9px rgba(0, 0, 0, .1);
 	font-weight: 400;
 	font-size: 1.6rem;
 }
+
+
 
 /*MEDIA QUERIES---------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 768px) {
