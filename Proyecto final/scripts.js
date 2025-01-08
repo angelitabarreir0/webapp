@@ -77,10 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
         basketIcon.classList.remove("multiplied-icons");
     });
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     const customerSupportIcon = document.querySelector(".customer-support i");
 
-    customerSupportIcon.addEventListener("mouseover", () => {
-        alert("Lo sentimos, no tenemos ningún customer ni ningún support.");
+    customerSupportIcon.addEventListener("click", () => {
+        alert("Lo sentimos, no tenemos ningún support ni ningún customer.");
+        customerSupportIcon.style.color = 'red'; // Cambia el color del icono al hacer clic
+    });
+
+    customerSupportIcon.addEventListener("mouseout", () => {
+        customerSupportIcon.style.color = ''; // Devuelve el color original al sacar el ratón
     });
 });

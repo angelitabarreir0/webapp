@@ -35,9 +35,6 @@ html{
 }
 
 
-    
-
-
 .hero{
     background-color: rgb(255, 255, 255);
     display:flex;
@@ -62,6 +59,7 @@ html{
     display: flex;
     flex-direction: column;
 }
+
 .customer-support {
     display: flex;
     align-items: center;
@@ -76,6 +74,15 @@ html{
 .content-customer-support {
     display: flex;
     flex-direction: column;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+    transition: color 0.3s ease; /* Añadimos una transición suave */
+}
+
+.customer-support i:hover {
+    color: red; /* Cambia el color al pasar el ratón */
 }
 
 .container-logo{
