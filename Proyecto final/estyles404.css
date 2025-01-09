@@ -1,0 +1,116 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.error-container {
+    max-width: 600px;
+    padding: 2rem;
+    border: 3px dashed #4a90e2; /* Borde azul */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    animation: shake 1s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    100% { transform: rotate(1deg); }
+}
+
+.error-title {
+    font-size: 6rem;
+    color: #e74c3c; /* Rojo */
+    margin: 0;
+}
+
+.error-subtitle {
+    font-size: 2rem;
+    color: #333; /* Texto oscuro */
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    color: #666; /* Gris medio */
+    margin-bottom: 2rem;
+}
+
+.error-icons {
+    margin: 2rem 0;
+}
+
+.error-icons i {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    color: #e74c3c; /* Rojo */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.error-icons i:hover {
+    color: #4a90e2; /* Azul */
+    transform: rotate(360deg);
+}
+
+.error-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #e74c3c; /* Rojo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-button:hover {
+    background-color: #4a90e2; /* Azul */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        #e74c3c,
+        #e74c3c 10px,
+        #fff 10px,
+        #fff 20px
+    );
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+    transition: color 0.3s ease; /* Añadimos una transición suave */
+}
+
+.customer-support i:hover {
+    color: #4a90e2; /* Azul al pasar el ratón */
+}
+
+.container-user a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-user a:hover {
+    color: #4a90e2; /* Azul al pasar el ratón */
+}
