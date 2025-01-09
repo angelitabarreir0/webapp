@@ -172,7 +172,7 @@ html{
 .container-user .fa-basket-shopping{
     font-size: 3rem;
     color: var(--primary-color);
-    padding-right: 4rem;
+    padding-right: 2rem;
 }
 
 .content-shopping-cart{
@@ -181,7 +181,7 @@ html{
 }
 
 .content-carrito-compra{
-	padding-right: 4rem;
+	padding-right: 2rem;
 }
 .marquee-container {
     width: 100%;

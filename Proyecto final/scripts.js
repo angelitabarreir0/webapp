@@ -90,3 +90,12 @@ document.addEventListener("DOMContentLoaded", function() {
         customerSupportIcon.style.color = ''; // Devuelve el color original al sacar el ratón
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    galleryItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add('visible');
+        }, index * 300); // Retrasa la animación para cada elemento PARA GALERIA
+    });
+});
